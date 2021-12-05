@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 03/24/21 16:36:20 by Eclipse SUMO GUI Version 1.8.0
+-->
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="2osm.net.xml"/>
+        <route-files value="2test.rou.xml"/>
+        <additional-files value="input_additional.add.xml"/>
+    </input>
+   
+    <processing>
+        <ignore-route-errors value="true"/>
+    </processing>
+    
+    <routing>
+        <device.rerouting.adaptation-steps value="18"/>
+        <device.rerouting.adaptation-interval value="10"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+    
+    <output>
+        <queue-output value="output_queue.xml"/>
+        <summary-output value="resumo_rede.xml"/>
+        <statistic-output value="estatistica.xml"/>
+    </output> 
+    
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+        
+    <additional>
+        <edgeData id="STNE#3" file="output"/>
+    </additional>
+
+    <gui_only>
+        <gui-settings-file value="osm.view.xml"/>
+    </gui_only>
+</configuration>

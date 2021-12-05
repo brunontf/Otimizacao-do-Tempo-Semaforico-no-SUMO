@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 16/11/2021 12:14:35 by Eclipse SUMO netedit Version 1.9.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="D:\Programas\sumo2\TCC\2osm.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="D:\Programas\sumo2\TCC\2osm.net.xml"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <route-files value="D:\Programas\sumo2\TCC\2test.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="DEFAULT_BUS" vClass="bus" accel="3" decel="5.5" sigma="0.2" tau="1.1"/>
+    <vType id="DEFAULT_MOTO" vClass="motorcycle"/>
+    <vType id="DEFAULT_VEHTYPE" vClass="passenger" accel="4.5" decel="7" sigma="0.2" tau="1.1"/>
+    <flow id="S1-S2-CAR" begin="0.00" from="STNE#1" to="STNS#3" end="3600.00" vehsPerHour="52.00"/>
+    <flow id="S1-S2-MOTO" begin="0.00" from="STNE#1" to="STNS#3" end="3600.00" vehsPerHour="4.00"/>
+    <flow id="S1-S5-BUS" type="DEFAULT_BUS" begin="0.00" from="STNE#1" to="L4S#1" end="3600.00" vehsPerHour="24.00"/>
+    <flow id="S1-S5-CAR" begin="0.00" from="STNE#1" to="L4S#1" end="3600.00" vehsPerHour="836.04"/>
+    <flow id="S1-S5-MOTO" type="DEFAULT_MOTO" begin="0.00" from="STNE#1" to="L4S#1" end="3600.00" vehsPerHour="64.00"/>
+    <flow id="S1-S6s-CAR" begin="0.00" from="STNE#1" to="SHNS#2" end="3600.00" vehsPerHour="112.00"/>
+    <flow id="S1-S6s-MOTO" type="DEFAULT_MOTO" begin="0.00" from="STNE#1" to="SHNS#2" end="3600.00" vehsPerHour="12.00"/>
+    <flow id="S1-S9-BUS" type="DEFAULT_BUS" begin="0.00" from="STNE#1" to="W3S#2" end="3600.00" vehsPerHour="96.00"/>
+    <flow id="S1-S9-CAR" begin="0.00" from="STNE#1" to="W3S#2" end="3600.00" vehsPerHour="248.00"/>
+    <flow id="S1-S9-MOTO" type="DEFAULT_MOTO" begin="0.00" from="STNE#1" to="W3S#2" end="3600.00" vehsPerHour="20.00"/>
+    <flow id="S3-S2-BUS" type="DEFAULT_BUS" begin="0.00" from="L4E#1" to="STNS#3" end="3600.00" vehsPerHour="56.00"/>
+    <flow id="S3-S2-CAR" begin="0.00" from="L4E#1" to="STNS#3" end="3600.00" vehsPerHour="1112.14"/>
+    <flow id="S3-S2-MOTO" type="DEFAULT_MOTO" begin="0.00" from="L4E#1" to="STNS#3" end="3600.00" vehsPerHour="40.00"/>
+    <flow id="S3-S5-BUS" type="DEFAULT_BUS" begin="0.00" from="L4E#1" to="L4S#1" end="3600.00" vehsPerHour="8.00"/>
+    <flow id="S3-S5-CAR" begin="0.00" from="L4E#1" to="L4S#1" end="3600.00" vehsPerHour="208.00"/>
+    <flow id="S3-S6s-CAR" begin="0.00" from="L4E#1" to="SHNS#2" end="3600.00" vehsPerHour="36.00"/>
+    <flow id="S3-S6s-MOTO" type="DEFAULT_MOTO" begin="0.00" from="L4E#1" to="SHNS#2" end="3600.00" vehsPerHour="4.00"/>
+    <flow id="S3-S9-BUS" type="DEFAULT_BUS" begin="0.00" from="L4E#1" to="W3S#2" end="3600.00" vehsPerHour="20.00"/>
+    <flow id="S3-S9-CAR" begin="0.00" from="L4E#1" to="W3S#2" end="3600.00" vehsPerHour="384.00"/>
+    <flow id="S3-S9-MOTO" type="DEFAULT_MOTO" begin="0.00" from="L4E#1" to="W3S#2" end="3600.00" vehsPerHour="32.00"/>
+    <flow id="S6e-S2-CAR" begin="0.00" from="SHNE#1" to="STNS#3" end="3600.00" vehsPerHour="84.00"/>
+    <flow id="S6e-S2-MOTO" type="DEFAULT_MOTO" begin="0.00" from="SHNE#1" to="STNS#3" end="3600.00" vehsPerHour="16.00"/>
+    <flow id="S6e-S5-CAR" begin="0.00" from="SHNE#1" to="L4S#1" end="3600.00" vehsPerHour="192.00"/>
+    <flow id="S6e-S5-MOTO" type="DEFAULT_MOTO" begin="0.00" from="SHNE#1" to="L4S#1" end="3600.00" vehsPerHour="16.00"/>
+    <flow id="S6e-S9-CAR" begin="0.00" from="SHNE#1" to="W3S#2" end="3600.00" vehsPerHour="40.00"/>
+    <flow id="S6e-S9-MOTO" type="DEFAULT_MOTO" begin="0.00" from="SHNE#1" to="W3S#2" end="3600.00" vehsPerHour="28.00"/>
+    <flow id="S7-S2-BUS" type="DEFAULT_BUS" begin="0.00" from="W3E#1" to="STNS#3" end="3600.00" vehsPerHour="28.00"/>
+    <flow id="S7-S2-CAR" begin="0.00" from="W3E#1" to="STNS#3" end="3600.00" vehsPerHour="204.00"/>
+    <flow id="S7-S2-MOTO" type="DEFAULT_MOTO" begin="0.00" from="W3E#1" to="STNS#3" end="3600.00" vehsPerHour="4.00"/>
+    <flow id="S7-S5-BUS" type="DEFAULT_BUS" begin="0.00" from="W3E#1" to="L4S#1" end="3600.00" vehsPerHour="64.00"/>
+    <flow id="S7-S5-CAR" begin="0.00" from="W3E#1" to="L4S#1" end="3600.00" vehsPerHour="772.04"/>
+    <flow id="S7-S5-MOTO" type="DEFAULT_MOTO" begin="0.00" from="W3E#1" to="L4S#1" end="3600.00" vehsPerHour="79.00"/>
+    <flow id="S7-S6s-CAR" begin="0.00" from="W3E#1" to="SHNS#2" end="3600.00" vehsPerHour="12.00"/>
+    <flow id="S7-S6s-MOTO" type="DEFAULT_MOTO" begin="0.00" from="W3E#1" to="SHNS#2" end="3600.00" vehsPerHour="1.00"/>
+    <flow id="S7-S9-BUS" begin="0.00" from="W3E#1" to="W3S#2" end="3600.00" vehsPerHour="32.00"/>
+    <flow id="S7-S9-CAR" begin="0.00" from="W3E#1" to="W3S#2" end="3600.00" vehsPerHour="84.00"/>
+    <flow id="S7-S9-MOTO" type="DEFAULT_MOTO" begin="0.00" from="W3E#1" to="W3S#2" end="3600.00" vehsPerHour="4.00"/>
+</routes>
