@@ -42,9 +42,9 @@
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <vType id="DEFAULT_BUS" vClass="bus" accel="3" decel="5.5" sigma="0.2" tau="1.1"/>
+    <vType id="DEFAULT_BUS" vClass="bus"/>
     <vType id="DEFAULT_MOTO" vClass="motorcycle"/>
-    <vType id="DEFAULT_VEHTYPE" vClass="passenger" accel="4.5" decel="7" sigma="0.2" tau="1.1"/>
+    <vType id="DEFAULT_VEHTYPE" vClass="passenger"/>
     <flow id="S1-S2-CAR" begin="0.00" from="STNE#1" to="STNS#3" end="3600.00" vehsPerHour="52.00"/>
     <flow id="S1-S2-MOTO" begin="0.00" from="STNE#1" to="STNS#3" end="3600.00" vehsPerHour="4.00"/>
     <flow id="S1-S5-BUS" type="DEFAULT_BUS" begin="0.00" from="STNE#1" to="L4S#1" end="3600.00" vehsPerHour="24.00"/>

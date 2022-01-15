@@ -1,0 +1,7 @@
+a configuracao 1 tem um ciclo de 94s , com tempo médio de viagem de aprox. 110s
+
+a configuracao 2 tem o ciclo "oficial" de 145s, com tempo médio de viagem de aprox. 292s
+
+a configuracao 3 tem o ciclo medido em campo com 145s, com tempo médio de viagem de aprox. 172s e 10s de vermelho geral.
+
+apesar do arquivo 3 ter 10s de vermelho geral, ele ainda é "mais rápido" pois impede que ocorra o "travamento" da rotatória conforme a imagem anexada.

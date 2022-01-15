@@ -1246,26 +1246,26 @@
     </edge>
 
     <tlLogic id="SEM1" offset="0" programID="1" type="static">
-        <phase duration="45" state="Ggr"/>
+        <phase duration="15" state="Ggr"/>
         <phase duration="5" state="yyr"/>
         <phase duration="2" state="rrr"/>
-        <phase duration="86" state="rrG"/>
+        <phase duration="65" state="rrG"/>
         <phase duration="5" state="rry"/>
         <phase duration="2" state="rrr"/>
     </tlLogic>
     <tlLogic id="SEM2" offset="0" programID="0" type="static">
-        <phase duration="50" state="Gr"/>
+        <phase duration="15" state="Gr"/>
         <phase duration="5" state="yr"/>
         <phase duration="2" state="rr"/>
-        <phase duration="81" state="rG"/>
+        <phase duration="65" state="rG"/>
         <phase duration="5" state="ry"/>
         <phase duration="2" state="rr"/>
     </tlLogic>
     <tlLogic id="SEM3" offset="0" programID="0" type="static">
-        <phase duration="30" state="Gr"/>
+        <phase duration="20" state="Gr"/>
         <phase duration="5" state="yr"/>
         <phase duration="2" state="rr"/>
-        <phase duration="101" state="rG"/>
+        <phase duration="60" state="rG"/>
         <phase duration="5" state="ry"/>
         <phase duration="2" state="rr"/>
     </tlLogic>
